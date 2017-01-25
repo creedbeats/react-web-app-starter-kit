@@ -1,0 +1,12 @@
+{
+  "extends": "react",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "react/react-in-jsx-scope": 0
+  }
+}
