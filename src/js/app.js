@@ -1,26 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import { syncHistoryWithStore } from 'react-router-redux';
 import thunk from 'redux-thunk';
-import createLogger from 'redux-logger';
 import promiseMiddleware from 'redux-promise';
 import { GatewayProvider, GatewayDest } from 'react-gateway';
 import Routes from './routes';
+import combinedReducers from './reducers';
 
 const middleware = [thunk, promiseMiddleware];
-middleware.push(
-  createLogger({ collapsed: true })
-);
+
+if (process.env.NODE_ENV === `development`) {
+  const createLogger = require(`redux-logger`);
+  const logger = createLogger({ collapsed: true });
+  middleware.push(logger);
+}
+
 const store = createStore(
-  combineReducers({
-    user: () => {
-      return {};
-    },
-    routing: routerReducer
-  }),
+  combinedReducers,
   applyMiddleware(...middleware)
 );
 const history = syncHistoryWithStore(browserHistory, store);
@@ -37,5 +36,3 @@ render(
   </Provider>,
   rootNode
 );
-
-console.log('here');

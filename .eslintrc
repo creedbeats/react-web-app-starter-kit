@@ -8,5 +8,8 @@
   "rules": {
     "indent": ["error", 2],
     "react/react-in-jsx-scope": 0
+  },
+  "globals": {
+    "Promise": true
   }
 }

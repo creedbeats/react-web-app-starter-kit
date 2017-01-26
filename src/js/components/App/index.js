@@ -1,12 +1,21 @@
-import React from 'react';
+import { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as userActions from '../../actions/user';
 
-export default class App extends React.Component {
+class App extends Component {
   static propTypes = {
-    children: React.PropTypes.element.isRequired
+    children: PropTypes.element.isRequired,
+    getUser: PropTypes.func.isRequired
   }
 
   constructor () {
     super();
+  }
+
+  componentWillMount () {
+    this.props.getUser()
+    .then(console.log);
   }
 
   render () {
@@ -17,3 +26,14 @@ export default class App extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return { ...state };
+};
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(
+    { ...userActions },
+    dispatch
+  );
+};
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Router, Route, IndexRedirect } from 'react-router';
+import { Component, PropTypes } from 'react';
+import { Router, Route, IndexRoute } from 'react-router';
 import App from '../components/App';
 import Home from '../components/Home';
 
-export default class Routes extends React.Component {
+export default class Routes extends Component {
   static propTypes = {
-    history: React.PropTypes.object.isRequired,
-    getState: React.PropTypes.func.isRequired
+    history: PropTypes.object.isRequired,
+    getState: PropTypes.func.isRequired
   }
 
   constructor (props) {
@@ -20,8 +20,7 @@ export default class Routes extends React.Component {
     return (
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRedirect to="sign-in"/>
-          <Route path="sign-in" component={Home}/>
+          <IndexRoute component={Home}/>
         </Route>
       </Router>
     );
