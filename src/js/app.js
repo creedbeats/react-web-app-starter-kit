@@ -12,7 +12,7 @@ import combinedReducers from './reducers';
 
 const middleware = [thunk, promiseMiddleware];
 
-if (process.env.NODE_ENV === `development`) {
+if (process.env.NODE_ENV !== 'production') {
   const createLogger = require(`redux-logger`);
   const logger = createLogger({ collapsed: true });
   middleware.push(logger);

@@ -14,8 +14,7 @@ class App extends Component {
   }
 
   componentWillMount () {
-    this.props.getUser()
-    .then(console.log);
+    this.props.getUser();
   }
 
   render () {
