@@ -56,37 +56,68 @@ class Demo extends Component {
               </div>
             </header>
             <nav className="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons"
+                  role="presentation"
+                >shopping_cart</i>Purchases
+              </a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social
+              </a>
               <div className="mdl-layout-spacer" />
-              <a className="mdl-navigation__link" href><i className="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span className="visuallyhidden">Help</span></a>
+              <a className="mdl-navigation__link" href>
+                <i className="mdl-color-text--blue-grey-400 material-icons"
+                  role="presentation">help_outline</i><span className="visuallyhidden">Help</span>
+              </a>
             </nav>
           </div>
           <main className="mdl-layout__content mdl-color--grey-100">
             <div className="mdl-grid demo-content">
               <div className="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
+                  className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
                   <use xlinkHref="#piechart" mask="url(#piemask)" />
-                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888" textAnchor="middle" dy="0.1">82<tspan fontSize="0.2" dy="-0.07">%</tspan></text>
+                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888"
+                  textAnchor="middle" dy="0.1">82<tspan fontSize="0.2" dy="-0.07">%</tspan></text>
                 </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
+                  className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
                   <use xlinkHref="#piechart" mask="url(#piemask)" />
-                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888" textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
+                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888"
+                  textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
                 </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
+                  className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
                   <use xlinkHref="#piechart" mask="url(#piemask)" />
-                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888" textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
+                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888"
+                  textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
                 </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
+                className="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
                   <use xlinkHref="#piechart" mask="url(#piemask)" />
-                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888" textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
+                  <text x="0.5" y="0.5" fontFamily="Roboto" fontSize="0.3" fill="#888"
+                  textAnchor="middle" dy="0.1">82<tspan dy="-0.07" fontSize="0.2">%</tspan></text>
                 </svg>
               </div>
               <div className="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
@@ -98,7 +129,15 @@ class Demo extends Component {
                 </svg>
               </div>
               <div className="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                <div className={`
+                  demo-updates
+                  mdl-card
+                  mdl-shadow--2dp
+                  mdl-cell
+                  mdl-cell--4-col
+                  mdl-cell--4-col-tablet
+                  mdl-cell--12-col-desktop`}
+                >
                   <div className="mdl-card__title mdl-card--expand mdl-color--teal-300">
                     <h2 className="mdl-card__title-text">Updates</h2>
                   </div>
@@ -110,7 +149,15 @@ class Demo extends Component {
                   </div>
                 </div>
                 <div className="demo-separator mdl-cell--1-col" />
-                <div className="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
+                <div className={`demo-options
+                  mdl-card
+                  mdl-color--deep-purple-500
+                  mdl-shadow--2dp
+                  mdl-cell
+                  mdl-cell--4-col
+                  mdl-cell--3-col-tablet
+                  mdl-cell--12-col-desktop`}
+                >
                   <div className="mdl-card__supporting-text mdl-color-text--blue-grey-50">
                     <h3>View options</h3>
                     <ul>
@@ -141,7 +188,9 @@ class Demo extends Component {
                     </ul>
                   </div>
                   <div className="mdl-card__actions mdl-card--border">
-                    <a href="#" className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change location</a>
+                    <a href="#"
+                      className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50"
+                    >Change location</a>
                     <div className="mdl-layout-spacer" />
                     <i className="material-icons">location_on</i>
                   </div>
@@ -173,26 +222,38 @@ class Demo extends Component {
                 <line fill="#888888" stroke="#888888" strokeMiterlimit={10} x1={0} y1="184.3" x2="468.3" y2="184.3" />
               </g>
               <g id="Numbers">
-                <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>500</text>
-                <text transform="matrix(1 0 0 1 485 69)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>400</text>
-                <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>300</text>
-                <text transform="matrix(1 0 0 1 485 149)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>200</text>
-                <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>100</text>
-                <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>1</text>
-                <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>2</text>
-                <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>3</text>
-                <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>4</text>
-                <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>5</text>
-                <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>6</text>
-                <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" fontFamily="'Roboto'" fontSize={9}>7</text>
+                <text transform="matrix(1 0 0 1 485 29.3333)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>500</text>
+                <text transform="matrix(1 0 0 1 485 69)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>400</text>
+                <text transform="matrix(1 0 0 1 485 109.3333)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>300</text>
+                <text transform="matrix(1 0 0 1 485 149)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>200</text>
+                <text transform="matrix(1 0 0 1 485 188.3333)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>100</text>
+                <text transform="matrix(1 0 0 1 0 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>1</text>
+                <text transform="matrix(1 0 0 1 78 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>2</text>
+                <text transform="matrix(1 0 0 1 154.6667 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>3</text>
+                <text transform="matrix(1 0 0 1 232.1667 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>4</text>
+                <text transform="matrix(1 0 0 1 309 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>5</text>
+                <text transform="matrix(1 0 0 1 386.6667 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>6</text>
+                <text transform="matrix(1 0 0 1 464.3333 249.0003)"
+                fill="#888888" fontFamily="'Roboto'" fontSize={9}>7</text>
               </g>
               <g id="Layer_5">
-                <polygon opacity="0.36" strokeMiterlimit={10} points="0,223.3 48,138.5 154.7,169 211,88.5
-              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	" />
+                <polygon opacity="0.36" strokeMiterlimit={10}
+                points="0,223.3 48,138.5 154.7,169 211,88.5 294.5,80.5 380,165.2 437,75.5 469.5,223.3" />
               </g>
               <g id="Layer_4">
-                <polygon strokeMiterlimit={10} points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
-              296.7,128 380.7,184.3 436.7,125 	" />
+                <polygon strokeMiterlimit={10}
+                points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7 296.7,128 380.7,184.3 436.7,125" />
               </g>
             </g>
           </defs>
