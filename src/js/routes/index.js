@@ -1,7 +1,7 @@
 import { Component, PropTypes } from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import App from '../components/App';
-import Home from '../components/Home';
+import Demo from '../components/Demo';
 
 export default class Routes extends Component {
   static propTypes = {
@@ -20,7 +20,7 @@ export default class Routes extends Component {
     return (
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRoute component={Home}/>
+          <IndexRoute component={Demo}/>
         </Route>
       </Router>
     );

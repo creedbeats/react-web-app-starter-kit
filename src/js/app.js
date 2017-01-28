@@ -1,3 +1,4 @@
+import '../styles/app.scss';
 import React from 'react';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
@@ -12,7 +13,7 @@ import combinedReducers from './reducers';
 
 const middleware = [thunk, promiseMiddleware];
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'dev') {
   const createLogger = require(`redux-logger`);
   const logger = createLogger({ collapsed: true });
   middleware.push(logger);
@@ -24,7 +25,6 @@ const store = createStore(
 );
 const history = syncHistoryWithStore(browserHistory, store);
 const rootNode = document.getElementById('react');
-
 render(
   <Provider store={store}>
     <GatewayProvider>

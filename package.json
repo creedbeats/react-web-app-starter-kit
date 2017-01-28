@@ -4,14 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start:fresh": "npm run build && npm start",
-    "build": "npm run styles:build && npm run js:build",
-    "js": "./node_modules/.bin/webpack",
-    "js:watch": "npm run js -- -w",
-    "js:build": "npm run js -- -p",
-    "styles": "./node_modules/.bin/node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js ./src/styles/app.scss ./dist/app.css",
-    "styles:build": "npm run styles",
-    "styles:watch": "npm run styles -- -wr"
+    "test": "",
+    "build": "webpack --colors --progress",
+    "build:watch": "npm run build -- -w",
+    "build:production": "npm run build -- -p",
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -32,16 +29,18 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.22.0",
     "babelify": "^7.3.0",
+    "css-loader": "^0.26.1",
     "eslint": "^3.14.0",
     "eslint-config-react": "^1.1.7",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-react": "^6.9.0",
     "faker": "^3.1.0",
+    "import-glob-loader": "^1.1.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "node-sass": "^4.3.0",
-    "node-sass-glob-importer": "^3.0.2",
+    "postcss-loader": "^1.2.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-gateway": "^2.6.0",
@@ -52,6 +51,8 @@
     "redux-logger": "^2.7.4",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
