@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
     "test": "",
-    "build": "webpack --colors --progress",
+    "build": "cp src/index.html dist/index.html && webpack --colors --progress",
     "build:watch": "npm run build -- -w",
     "build:production": "npm run build -- -p",
-    "dev": "webpack-dev-server"
+    "dev": "npm run build && npm run dev:server",
+    "dev:server": "lite-server --baseDir ./dist"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -37,6 +37,7 @@
     "faker": "^3.1.0",
     "import-glob-loader": "^1.1.0",
     "json-loader": "^0.5.4",
+    "lite-server": "^2.2.2",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
     "node-sass": "^4.3.0",
